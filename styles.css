@@ -1,0 +1,740 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #E8F5E9;
+}
+
+#home #about #experience #education-section #skills-section #contact {
+  margin: 20px;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #212529;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #52b788;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #52b788;
+}
+
+/* Burger Menu Styling */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  background-color: #333;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    border-radius: 2px;
+    background-color: #52b788;
+  }
+  
+  .burger-menu {
+    display: flex;
+  }
+}
+
+/* home-page-css */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 10%;
+}
+
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+
+}
+
+.textarea p {
+  font-size: 1rem;
+  color: #2d3436;
+  letter-spacing: 1;
+
+}
+
+.textarea span {
+  font-weight: bolder;
+  color: #52b788;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  background-color: #007bff;
+
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+.code-container {
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  /* Adds horizontal scroll for long lines of code */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.code-container pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-container code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #2d6a4f;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #1b4332;
+}
+
+
+/*about*/
+/* General Section Styling */
+#about {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Title Underline Effect */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #408f61;
+  margin: 8px auto 0;
+  border-radius: 4px;
+}
+
+/* About Grid Layout */
+.about-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Left Content */
+.about-content {
+  flex: 1;
+  text-align: left;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* Image Container */
+.about-grid img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #52b788;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.about-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Experience Section Styling */
+#experience {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+
+
+/* Experience Grid Layout */
+.experience-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Lottie Animation */
+.Gif-experence {
+  flex: 1;
+  text-align: center;
+}
+
+/* Experience Item */
+.experience-item {
+  flex: 1;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  background: #52b788;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-list {
+  max-height: 100px;
+  /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 10px;
+  list-style-type: disc;
+  list-style-position: inside;
+
+}
+
+/* Custom Scrollbar */
+.experience-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.experience-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light grey background */
+  border-radius: 10px;
+}
+
+.experience-list::-webkit-scrollbar-thumb {
+  background: black;
+  /* Scroll thumb color */
+  border-radius: 10px;
+}
+
+.experience-list::-webkit-scrollbar-thumb:hover {
+  background: #40916c;
+  /* Darker color on hover */
+  cursor: pointer;
+}
+
+.experience-list li {
+  font-size: smaller;
+}
+
+/* Hover Effect */
+.experience-item:hover {
+  transform: scale(1.05);
+}
+
+/* Experience Duration */
+.experience-duration {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Experience Details */
+.experience-details h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.experience-details p {
+  margin: 5px 0;
+}
+
+
+/* Education Section */
+#education-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+
+
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Education Cards */
+.education-card {
+  background: #52b788;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.education-card:hover {
+  transform: scale(1.05);
+}
+
+/* Education Title */
+.education-title {
+  font-size: 1.5rem;
+  color: #fff;  ;
+  margin-bottom: 10px;
+}
+
+/* School Name */
+.school-name {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Marks */
+.marks {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+/* Skills Section */
+#skills-section {
+  padding: 80px 10%;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+/* Skills Slider Container */
+.skills-slider {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  padding: 5px;
+}
+
+/* Slider Track (Moving Animation) */
+.slider-track {
+  display: flex;
+  gap: 30px;
+  animation: slide 12s linear infinite;
+  width: 3300px;
+  /* Adjust this based on total card width */
+}
+
+/* Skill Card */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  padding: 15px;
+  background: #52b788;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Skill Image */
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Skill Name */
+.skill-card span {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+/* Keyframes for Sliding Effect */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1100px);
+    /* Adjust based on total width of cards */
+  }
+}
+
+
+/* Contact Section */
+#contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+
+/* Flexbox Layout */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  box-shadow: #408f61 5px;
+}
+
+/* Contact Form */
+#contact-form {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #52b788;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Inputs */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Send Button */
+.send-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+/* Thank You Message */
+#thank-you-message {
+  margin-top: 20px;
+  color: #007bff;
+}
+
+/* Contact Animation (Lottie GIF) */
+.contact-animation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.footer {
+  background: #212121;
+  color: #E8F5E9;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  height: 50px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .logo {
+    font-size: 1rem;
+      }
+
+  /* home */
+  .home-grid {
+    display: flex;
+    padding: 40px ;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .code-container {
+    max-width: 100%;
+  }
+
+  .code-container code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+  }
+
+  /* about  */
+
+  #about {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .about-content {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /* workHistory */
+
+  #experience {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .experience-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-item {
+    text-align: center;
+  }
+  .experience-details h3 {
+    font-size: 14px;
+  }
+  .experience-details p {
+    font-size: 12px;
+  }
+.experience-list li{
+  font-size: 12px;
+
+}
+
+  .experience-duration{
+    font-size: 16px;
+  }
+
+  /* Education */
+
+  #education-section {
+    padding: 40px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-card {
+    width: 90%;
+  }
+
+  .education-title{
+    font-size: 16px;
+  }
+  .school-name {
+    font-size: 14px;
+  }
+
+  .marks{
+    font-size: 12px;
+  }
+
+
+  /* skillsSection */
+  #skills-section {
+    padding: 40px;
+  }
+
+  .skill-card {
+    width: 100px;
+    padding: 10px;
+
+  }
+
+  .slider-track {
+    animation: slide 10s linear infinite;
+  }
+
+  .skill-card {
+    width: 100px;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 40px;
+    text-align: center;
+    gap: 3px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-animation {
+    margin-top: 20px;
+  }
+
+  #contact-form {
+  display: block;
+  max-width: max-content;
+   
+  }
+
+
+  /* section_tittle */
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+  }
+
+  /* 
+fotter-Section */
+
+  .footer p {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 12px;
+  }
+
+}

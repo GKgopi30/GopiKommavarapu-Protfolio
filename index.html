@@ -1,13 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My HTML Site</title>
+  <title>Responsive Header</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+
 </head>
+
 <body>
-  <h1>Welcome to My HTML Site</h1>
-  <p>This site is hosted on GitHub Pages gopi.</p>
+  <header class="header">
+    <div class="logo">Gopi Kommavarapu</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education-section">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Demo content -->
+  <section id="home">
+    <div class="home-grid">
+      <!-- Left Side Text Area -->
+      <div class="textarea">
+        <p>Hey there! 👋</p>
+        <p> I'm <span class="highlight">Gopi Kommavarapu</span>,</p>
+        <p> a <span class="highlight">Creative Web Developer </span>.who loves building awesome web experiences. </p>
+
+
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://github.com/GKgopi30" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://instagram.com/dhe_leo__" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gopi-kommavarapu-073307246/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <a href="#contact">
+            <button class="btn">
+              <i class="fa fa-address-book" aria-hidden="true"></i>Contact Me</button>
+          </a>
+          <div class="resume-button">
+            <a href="Resume.pdf" download="Gopi_Kommavarapu_Resume.pdf">
+              <button class="btn">
+                <i class="fa fa-cloud-download" aria-hidden="true"></i>Get Resume</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Typing JavaScript Code -->
+      <div class="code-container">
+        <pre><code id="code-display"></code></pre>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h1 class="section-title">Meet Gopi</h1>
+    <div class="about-grid">
+      <div class="about-content">
+        <p>"I am passionate about solving complex problems and collaborating with teams to build high-quality, efficient
+          solutions.</p>
+        <p>With a strong foundation in React.js and modern web technologies, I am a quick learner who continuously
+          adapts to new challenges and innovations."</p>
+      </div>
+      <div><img src="images/mypic.png" alt="Mohd Shahid Khan"></div>
+    </div>
+  </section>
+  </hr>
+
+  <section id="experience">
+    <h2 class="section-title">Work History</h2>
+    <div class="experience-grid">
+      <div class="Gif-experence">
+        <dotlottie-player src="https://lottie.host/35d84444-280f-41ac-b106-a1a5ce2e5281/qAP9jGYKoB.lottie"
+          background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay>
+        </dotlottie-player>
+      </div>
+      <div class="experience-item">
+        <span class="experience-duration">2021 - Present</span>
+        <div class="experience-details">
+          <h3>Tata Consultancy Services (TCS)</h3>
+          <p>Web Developer</p>
+          <ul class="experience-list">
+            <li>Developed and styled interactive, responsive web pages using HTML5, CSS3, Bootstrap, and Tailwind CSS.</li>
+            <li>Implemented dynamic UI functionalities using JavaScript (ES6), TypeScript, JSX, and JSON.</li>
+            <li>Built reusable, modular React components, efficiently managing state using Redux and Context API.</li>
+            <li>Integrated RESTful APIs using Fetch API and Axios for seamless backend communication.</li>
+            <li>Ensured authentication & authorization with JWT for secure user access.</li>
+            <li>Used Git, GitHub, NPM, and Yarn for version control and dependency management.</li>
+            <li>Optimized performance and asset management using Webpack, Vite, and Parcel.</li>
+            <li>Gained hands-on experience with Node.js, Express.js, and MongoDB (Mongoose) for API handling and data storage.</li>
+            <li>Collaborated with the UX team to convert designs into user-friendly, accessible web interfaces.</li>
+            <li>Debugged applications using browser dev tools, ensuring cross-browser compatibility.</li>
+            <li>Worked in an Agile environment, actively participating in scrum meetings and sprint planning.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education-section">
+    <h2 class="section-title">Education</h2>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="education-card">
+        <div class="card-content">
+          <h3 class="education-title">SSC</h3>
+          <p class="school-name">Vivekananda Vidyaniketan high School</p>
+          <p class="marks">Marks: 8.3</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="education-card">
+        <div class="card-content">
+          <h3 class="education-title">Diploma</h3>
+          <p class="school-name">Gandhiji Institute of Science and
+            Technology - [GIST], Bhimavaram</p>
+          <p class="marks">Marks: 77.91%</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="education-card">
+        <div class="card-content">
+          <h3 class="education-title">Graduation</h3>
+          <p class="school-name">Amrita sai institute of science and Technology - parital</p>
+          <p class="marks">Marks: 7.24</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills-section">
+    <h2 class="section-title">My Tech Stack</h2>
+    <div class="skills-slider">
+      <div class="slider-track">
+        <!-- Skill Cards -->
+        <div class="skill-card">
+          <img src="images/html-5.png" alt="HTML Logo">
+          <span>HTML</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/css-3.png" alt="CSS Logo">
+          <span>CSS</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/js.png" alt="JS Logo">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/react.png" alt="REACT Logo">
+          <span>React</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/css.png" alt="CSS Logo">
+          <span>Tailwind</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/github.png" alt="Git Logo">
+          <span>Git</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/nodejs.png" alt="NODE Logo">
+          <span>NodeJs</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/bootstrap.png" alt="Bootstap Logo">
+          <span>Bootstap</span>
+        </div>
+        <!-- Repeat Cards for Smooth Loop -->
+        <div class="skill-card">
+          <img src="images/html-5.png" alt="HTML Logo">
+          <span>HTML</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/css-3.png" alt="CSS Logo">
+          <span>CSS</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/js.png" alt="JS Logo">
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/react.png" alt="REACT Logo">
+          <span>React</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/css.png" alt="CSS Logo">
+          <span>Tailwind</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/github.png" alt="Git Logo">
+          <span>Git</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/nodejs.png" alt="NODE Logo">
+          <span>NodeJs</span>
+        </div>
+        <div class="skill-card">
+          <img src="images/bootstrap.png" alt="Bootstap Logo">
+          <span>Bootstap</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+      <form id="contact-form" action="https://formspree.io/f/mkgojzwl" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="send-button">Send</button>
+      </form>
+
+      <!-- GIF Animation on the Right -->
+      <div class="contact-animation">
+        <dotlottie-player src="https://lottie.host/5ce5d81a-f53e-4cc9-a415-d8a44b7212af/RfIR5hSGSz.lottie"
+          background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+      </div>
+    </div>
+
+    <div id="thank-you-message" style="display:none;">
+      <h2>Thank You!</h2>
+      <p>Your message has been sent successfully.</p>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>© 2025 Gopi Kommavarapu. All rights reserved.</p>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
