@@ -41,8 +41,9 @@
 const codeText = `const coder = {
   name: 'Gopi Kommavarapu',
   skills: {
-    frontend: ['ReactJS', 'NextJS', 'ViteJS', 'Redux', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS', 'Material UI'],
-    backend: ['Node.js with Express', 'MongoDB', 'MySQL'],
+    frontend: ['ReactJS', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS', 'Material UI'],
+    statemanagement: [Redux,context Api],
+    backend: ['Node.js with Express', 'MongoDB',],
     tools: ['Git', 'GitHub', 'VS Code'],
   },
   softSkills: ['Problem-Solving', 'Quick Learning', 'Team Collaboration'],

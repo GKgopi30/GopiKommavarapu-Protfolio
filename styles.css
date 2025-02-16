@@ -10,6 +10,7 @@ body {
   background-color: #E8F5E9;
 }
 
+
 #home #about #experience #education-section #skills-section #contact {
   margin: 20px;
 }
@@ -52,9 +53,6 @@ body {
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: #52b788;
-}
 
 /* Burger Menu Styling */
 .burger-menu {
@@ -131,7 +129,8 @@ body {
 }
 
 .btn {
-  padding: 10px;
+  width: 130px;
+  height: 40px;
   border: none;
   border-radius: 5px;
   color: white;
@@ -486,7 +485,7 @@ body {
 /* Contact Section */
 #contact {
   padding: 80px 10%;
-  text-align: center;
+  text-align: start;
 }
 
 
@@ -518,14 +517,18 @@ body {
 #contact-form textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 20px;
+ background: #52b788;
+ border: none;
+ border-bottom: 1px solid white;
+ outline: none;
 }
 
 /* Send Button */
 .send-button {
   background-color: #007bff;
+  width: 350px;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -618,7 +621,7 @@ body {
 
   .about-content {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* workHistory */
@@ -643,7 +646,8 @@ body {
     font-size: 12px;
   }
 .experience-list li{
-  font-size: 12px;
+  font-size: 14px;
+  padding: 1px;
 
 }
 
@@ -674,7 +678,7 @@ body {
   }
 
   .marks{
-    font-size: 12px;
+    font-size: 13px;
   }
 
 
@@ -700,9 +704,10 @@ body {
   /* Contact Section */
   #contact {
     padding: 40px;
-    text-align: center;
+    text-align: start;
     gap: 3px;
   }
+
 
   .contact-container {
     flex-direction: column;
@@ -717,6 +722,9 @@ body {
   display: block;
   max-width: max-content;
    
+  }
+  .send-button {
+    width: 300px;
   }
 
 
