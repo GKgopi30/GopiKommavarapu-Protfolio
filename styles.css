@@ -485,15 +485,16 @@ body {
 /* Contact Section */
 #contact {
   padding: 80px 10%;
-  text-align: start;
+  text-align: center;
 }
+
 
 
 /* Flexbox Layout */
 .contact-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 50px;
   box-shadow: #408f61 5px;
 }
@@ -501,6 +502,8 @@ body {
 /* Contact Form */
 #contact-form {
   flex: 1;
+
+  text-align: start;
   max-width: 400px;
   display: flex;
   flex-direction: column;
