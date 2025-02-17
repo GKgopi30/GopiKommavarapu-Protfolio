@@ -502,8 +502,7 @@ body {
 /* Contact Form */
 #contact-form {
   flex: 1;
-
-  text-align: start;
+  /* text-align: start; */
   max-width: 400px;
   display: flex;
   flex-direction: column;
@@ -707,7 +706,7 @@ body {
   /* Contact Section */
   #contact {
     padding: 40px;
-    text-align: start;
+    /* text-align: start; */
     gap: 3px;
   }
 
@@ -724,10 +723,11 @@ body {
   #contact-form {
   display: block;
   max-width: max-content;
+  text-align: start;
    
   }
   .send-button {
-    width: 300px;
+    width: 250px;
   }
 
 
